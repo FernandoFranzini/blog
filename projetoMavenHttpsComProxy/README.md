@@ -1,1 +1,1 @@
-Esse projeto mostra como configurar o pom do maven, baixado as dependências fazendo uso do repositório maven HTTP ou invés do HTTPS, muito utilizado em casos no qual a corporação usa proxy e bloqueio de requisições SSL.
+Esse projeto configura o pom do maven, baixado as dependências fazendo uso do repositório maven no HTTP ao invés do HTTPS, muito utilizado em casos no qual a corporação usa proxy e ou bloqueio de requisições SSL.
