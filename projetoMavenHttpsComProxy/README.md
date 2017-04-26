@@ -1,1 +1,1 @@
-Teste Fernando
+Esse projeto apresenta como configurar o maven  baixado as dependências fazendo uso do repositório maven HTTP ou inves do HTTPS, usando em casos no qual a corporação sua proxy e bloqueio de requisições SSL.
