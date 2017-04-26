@@ -1,8 +1,29 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>projetoMavenHttpsComProxy</groupId>
-  <artifactId>projetoMavenHttpsComProxy</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>projetoMavenHttpsComProxy</name>
-  <description>projetoMavenHttpsComProxy</description>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>projetoMavenHttpsComProxy</groupId>
+	<artifactId>projetoMavenHttpsComProxy</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>projetoMavenHttpsComProxy</name>
+	<description>projetoMavenHttpsComProxy</description>
+
+	<repositories>
+		<repository>
+			<id>central</id>
+			<url>http://repo1.maven.org/maven2</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!-- Groovy -->
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+			<version>2.4.10</version>
+		</dependency>
+	</dependencies>
+
 </project>
