@@ -6,7 +6,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>projetoMavenHttpsComProxy</name>
 	<description>projetoMavenHttpsComProxy</description>
-
+	
+	<!-- configuração com HTTP -->
 	<repositories>
 		<repository>
 			<id>central</id>
