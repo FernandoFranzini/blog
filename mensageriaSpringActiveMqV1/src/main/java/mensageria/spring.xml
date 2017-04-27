@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+        http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.3.xsd">
+
+	<bean id="localBroker" class="org.apache.activemq.broker.BrokerService" init-method="start" destroy-method="stop">
+		<property name="brokerName" value="localhost" />
+		<property name="persistent" value="false" />
+		<property name="useJmx" value="false" />
+	</bean>
+
+	<bean id="connectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+		<constructor-arg value="vm://localhost?create=false" />
+		<property name="redeliveryPolicy">
+			<bean class="org.apache.activemq.RedeliveryPolicy">
+				<property name="maximumRedeliveries" value="4" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="cacheConnectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+		<constructor-arg ref="connectionFactory" />
+		<property name="sessionCacheSize" value="5" />
+	</bean>
+
+	<bean id="fila1" class="org.apache.activemq.command.ActiveMQQueue">
+		<constructor-arg value="fila1" />
+	</bean>
+
+	<bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="cacheConnectionFactory" />
+		<property name="defaultDestination" ref="fila1" />
+	</bean>
+
+	<bean id="listenerMensagem" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+		<property name="connectionFactory" ref="cacheConnectionFactory" />
+		<property name="destination" ref="fila1" />
+		<property name="messageListener" ref="receptor" />
+	</bean>
+
+	<context:component-scan base-package="mensageria" />
+</beans>
