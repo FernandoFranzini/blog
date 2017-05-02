@@ -6,7 +6,7 @@ package chamadasRestOtimizada;
  * @version 1.0 -02/05/17
  * @since 02/05/17
  */
-public interface WebServices {
+public interface Rest {
     /**
      * Emula chamada remota.
      * @return emula retorno string.

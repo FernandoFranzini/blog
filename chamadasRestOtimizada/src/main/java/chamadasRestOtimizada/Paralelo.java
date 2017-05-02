@@ -19,21 +19,21 @@ public class Paralelo {
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
        
         // Mock de chamada de web services com 5 segundos.
-        WebServices servico1 = () -> {
+        Rest servico1 = () -> {
             try {
                 Thread.sleep(10000);
             } catch (InterruptedException e) {
             }
             return "serviço 1";
         };
-        WebServices servico2 = () -> {
+        Rest servico2 = () -> {
             try {
                 Thread.sleep(10000);
             } catch (InterruptedException e) {
             }
             return "serviço 2";
         };
-        WebServices servico3 = () -> {
+        Rest servico3 = () -> {
             try {
                 Thread.sleep(10000);
             } catch (InterruptedException e) {
