@@ -13,7 +13,7 @@ public class Sequencial {
     public static void main(String[] args) {
         // formatados de dadas
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-        
+
         // Mock de chamada de web services com 5 segundos.
         Rest servico1 = () -> {
             try {
@@ -36,12 +36,12 @@ public class Sequencial {
             }
             return "serviço 3";
         };
-        
+
         // Invocando web services sequencial
         System.out.println("inicio -" + sdf.format(new Date()));
         System.out.println("-->" + servico1.metodoRemoto());
         System.out.println("-->" + servico2.metodoRemoto());
         System.out.println("-->" + servico3.metodoRemoto());
-        System.out.println(sdf.format(new Date()));
+        System.out.println("final - " + sdf.format(new Date()));
     }
 }

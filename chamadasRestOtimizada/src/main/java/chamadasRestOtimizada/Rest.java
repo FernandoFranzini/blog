@@ -13,3 +13,5 @@ public interface Rest {
      */
     public String metodoRemoto();
 }
+
+
