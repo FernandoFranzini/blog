@@ -7,6 +7,12 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+/**
+ * Emula chamada remota em paralelo usando Java Future.
+ * @author Fernando Franzini
+ * @version 1.0 -02/05/17
+ * @since 02/05/17
+ */
 public class Paralelo {
     public static void main(String[] args) {
         // formatados de dadas

@@ -3,6 +3,12 @@ package chamadasRestOtimizada;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * Emula chamada remota sequencial.
+ * @author Fernando Franzini
+ * @version 1.0 -02/05/17
+ * @since 02/05/17
+ */
 public class Sequencial {
     public static void main(String[] args) {
         // formatados de dadas
