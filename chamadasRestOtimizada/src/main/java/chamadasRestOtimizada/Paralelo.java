@@ -17,12 +17,12 @@ public class Paralelo {
     public static void main(String[] args) {
         // formatados de dadas
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+       
         // Mock de chamada de web services com 5 segundos.
         WebServices servico1 = () -> {
             try {
                 Thread.sleep(10000);
             } catch (InterruptedException e) {
-                e.printStackTrace();
             }
             return "serviço 1";
         };
@@ -30,7 +30,6 @@ public class Paralelo {
             try {
                 Thread.sleep(10000);
             } catch (InterruptedException e) {
-                e.printStackTrace();
             }
             return "serviço 2";
         };
@@ -38,7 +37,6 @@ public class Paralelo {
             try {
                 Thread.sleep(10000);
             } catch (InterruptedException e) {
-                e.printStackTrace();
             }
             return "serviço 3";
         };
