@@ -63,5 +63,6 @@ public class Paralelo {
             e.printStackTrace();
         }
         System.out.println(sdf.format(new Date()));       
+        System.exit(0);
     }
 }

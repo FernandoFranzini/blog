@@ -1,1 +1,1 @@
-Projeto relacionado ao post do artigo - https://fernandofranzini.wordpress.com/2017/04/26/maven-usando-repositorio-http/
+Projeto relacionado ao post do artigo - https://fernandofranzini.wordpress.com/2017/05/02/otimizando-chamadas-rest/
