@@ -28,6 +28,7 @@ class Sorteio extends Application {
     def getParticipantes() {
         def pts = []
         pts << new Expando()
+        pts << new Expando([nome:"Nome1", email:"nome1gmail.com"])
         pts << new Expando([nome:"Nome2", email:"nome2gmail.com"])
         pts << new Expando([nome:"Nome3", email:"nome3@gmail.com"])
         pts << new Expando([nome:"Nome4", email:"nome4@gmail.com"])
