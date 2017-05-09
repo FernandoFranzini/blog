@@ -39,8 +39,9 @@ class Sorteio extends Application {
     @Override
     void start(Stage primaryStage) throws Exception {
         def lista =  getParticipantes()
-        def  sorteado = Math.abs(new Random().nextInt() % lista.size()) + 1
-        def sortudo  =  lista[sorteado]
+        def  i = Math.abs(new Random().nextInt() % lista.size())
+        println i
+        def sortudo  =  lista[i]
         def alert = new Alert(AlertType.INFORMATION)
         alert.title  = "Sorteio FORJ"
         alert.headerText = "Sorteiado foi:"
