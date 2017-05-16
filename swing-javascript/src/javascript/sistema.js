@@ -1,5 +1,7 @@
+// Programação Swing usando JavaScript.
+
 var JFrame = Java.type('javax.swing.JFrame');
-var tela = new JFrame("Fiu feita com JavaScript")
+var tela = new JFrame("Eu fui feita com JavaScript")
 tela.setSize(300, 300)
 tela.locationRelativeTo = null
 
