@@ -1,1 +1,1 @@
-Projeto relacionado ao post do artigo - https://fernandofranzini.wordpress.com/2017/05/02/otimizando-chamadas-rest/
+Projeto relacionado ao post do artigo - https://fernandofranzini.wordpress.com/2017/05/16/gosta-da-jvm-gosta-de-javascript-use-os-dois/
