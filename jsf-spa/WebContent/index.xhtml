@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://primefaces.org/ui" xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+</h:head>
+<h:body>
+	<h:form>
+		<p:commandButton value="Home" action="#{menuBean.entrarHome}" update="pagina" />
+		<p:commandButton value="Cadastro" action="#{menuBean.entrarCadastro}" update="pagina" />
+	</h:form>
+	<h:panelGroup id="pagina" layout="block">
+		<p:panel header="Sistema">
+			<ui:include src="#{menuBean.pagina}" />
+		</p:panel>
+	</h:panelGroup>
+</h:body>
+</html>
