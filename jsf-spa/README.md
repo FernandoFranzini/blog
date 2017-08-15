@@ -1,1 +1,1 @@
-Projeto relacionado ao post do artigo - https://fernandofranzini.wordpress.com/2017/04/27/solucao-de-mensageira-nao-e-um-bicho-de-7-cabecas-1/
+Projeto relacionado ao post do artigo - https://fernandofranzini.wordpress.com/2017/08/15/jsf-spa/
